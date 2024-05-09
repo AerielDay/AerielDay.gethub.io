@@ -2531,6 +2531,7 @@ input, select, textarea {
 
 		.image img {
 			border-radius: 4px;
+			height:100%;
 			display: block;
 		}
 
