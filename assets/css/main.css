@@ -3153,6 +3153,7 @@ input, select, textarea {
 
 		.spotlight.style3 .content {
 			border-color: #16537e;
+			margin-right:2px;
 		}
 
 		.spotlight.inactive .content {
