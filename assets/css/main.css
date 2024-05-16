@@ -557,14 +557,17 @@ input, select, textarea {
 		}
 	}
 .testingAlpha{
-font-size:60px !important;
+font-size:25px !important;
+
 }
 .testingBeta{
-	color:red !important;
+	color:#d7e9f2!important;
+	font-size:25px!important;
+	
 }
 .testingGamma{
-	color:cyan !important;
-	font-size:10px !important;
+	
+	font-size:25px !important;
 }
 	body.landing {
 		text-decoration: none;
@@ -655,8 +658,8 @@ font-size:60px !important;
 
 	.container {
 		margin: 0 auto;
-		max-width: calc(100% - 4em);
-		width: 70em;
+		/*max-width: calc(100% - 4em);
+		width: 70em;*/
 	}
 
 		.container.xsmall {
@@ -707,6 +710,7 @@ font-size:60px !important;
 		flex-wrap: wrap;
 		box-sizing: border-box;
 		align-items: stretch;
+		justify-content: space-evenly;
 	}
 
 		.row > * {
@@ -770,7 +774,7 @@ font-size:60px !important;
 		}
 
 		.row > .col-4 {
-			width: 33.33333%;
+			width: 30.33333%;
 		}
 
 		.row > .off-4 {
@@ -2182,7 +2186,7 @@ font-size:60px !important;
 
 	header h2 + p {
 		/*font-size: 1.25em;*/
-		font-size:35px;
+		font-size:25px;
 		margin-top: -1em;
 		line-height: 1.75em;
 	}
@@ -3151,7 +3155,9 @@ font-size:60px !important;
 			height: 101%;
 			padding: 6em 3em;
 			top: 0;
-			width: 28em;
+			/*min-width:50%;
+			max-width: 700px;*/
+			width: 50%;
 		}
 
 		.spotlight.left .content {
@@ -3405,7 +3411,7 @@ font-size:60px !important;
         background: rgba(25,62,78, 0.965);
         box-shadow: 0 0 0.25em 0 rgba(25,62,78, 0.25);
 		cursor: default;
-		height: 3.5em;
+		min-height: 3.5em;
 		left: 0;
 		line-height: 3.5em;
 		position: fixed;
@@ -3545,10 +3551,12 @@ font-size:60px !important;
 			#banner .content .image {
 				border-radius: 100%;
 				display: inline-block;
-				height: 18em;
+				height: 10em;
+				min-height:350px;
+				min-width:350px;
 				margin-left: 3em;
 				vertical-align: middle;
-				width: 18em;
+				width: 10em;
 			}
 
 				#banner .content .image img {
@@ -3654,7 +3662,7 @@ font-size:60px !important;
 
 			.spotlight.left .content, .spotlight.right .content {
 				padding: 4.5em 2.5em;
-				width: 25em;
+				width: 50%;
 			}
 
 		/* Wrapper */
@@ -3821,7 +3829,7 @@ font-size:60px !important;
 
 			header h2 + p {
 				/*font-size: 1em;*/
-				font-size:35px;
+				font-size:25px;
 			}
 
 			header h3 + p {
