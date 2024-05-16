@@ -556,7 +556,16 @@ input, select, textarea {
 			z-index: -1;
 		}
 	}
-
+.testingAlpha{
+font-size:60px !important;
+}
+.testingBeta{
+	color:red !important;
+}
+.testingGamma{
+	color:cyan !important;
+	font-size:10px !important;
+}
 	body.landing {
 		text-decoration: none;
 	}
