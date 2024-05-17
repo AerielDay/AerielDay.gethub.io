@@ -897,7 +897,7 @@ font-size:25px !important;
 				}
 
 		.row {
-			margin-top: 0;
+			margin-top: 5em;
 			margin-left: -2.5em;
 		}
 
@@ -2999,9 +2999,9 @@ font-size:25px !important;
 		background-attachment: fixed;
 		background-position: center center;
 		background-size: cover;
-		border-bottom:35px solid rgba(25,62,78, 0.95);
+		border-bottom:35px solid rgba(25,62,78, 1);
 		box-shadow: 0 0.25em 0.5em 0 rgba(25,62,78, 0.25);
-		height: 100vh;
+		min-height: 30em;
 		overflow: hidden;
 		position: relative;
 	}
@@ -3089,7 +3089,7 @@ font-size:25px !important;
 		.spotlight:before {
             /*background-image: url("images/overlay.png");*/
 			content: '';
-			display: block;
+			/*display: block;*/
 			height: 100%;
 			left: 0;
 			top: 0;
@@ -3113,7 +3113,7 @@ font-size:25px !important;
 			-webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
 			-ms-transition: -ms-transform 1s ease, opacity 1s ease;
 			transition: transform 1s ease, opacity 1s ease;
-            background: rgba(25,62,78, 0.95);
+            background: rgba(25,62,78,1);
 			border-style: solid;
 			opacity: 1;
 			position: absolute;
@@ -3171,7 +3171,7 @@ font-size:25px !important;
 		}
 
 		.spotlight.style1 .content {
-			border-color: #2b7483;
+			border-color: #80b3ba;
 		}
 
 		.spotlight.style2 .content {
@@ -3179,7 +3179,7 @@ font-size:25px !important;
 		}
 
 		.spotlight.style3 .content {
-			border-color: #16537e;
+			border-color: #80b3ba;
 			margin-right:5px
 		}
 
