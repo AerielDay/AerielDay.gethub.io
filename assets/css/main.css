@@ -646,7 +646,7 @@ font-size:25px !important;
 			z-index: 100000;
 		}
 
-	<>@media (-webkit-min-device-pixel-ratio: 2) {
+	@media (-webkit-min-device-pixel-ratio: 2) {
 
 		body.landing:before {
 			line-height: 2.025em;
@@ -686,7 +686,7 @@ font-size:25px !important;
 			width: 100%;
 		}
 
-		<>@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 1280px) {
 
 			.container {
 				width: 90%;
@@ -695,7 +695,7 @@ font-size:25px !important;
 
 		}
 
-		<>@media screen and (max-width: 980px) {
+		@media screen and (max-width: 980px) {
 
 			.container {
 				width: 100% !important;
@@ -947,7 +947,7 @@ font-size:25px !important;
 					padding-top: 5em;
 				}
 
-		<>@media screen and (max-width: 1680px) {
+		@media screen and (max-width: 1680px) {
 
 			.row {
 				display: flex;
@@ -1192,7 +1192,7 @@ font-size:25px !important;
 
 		}
 
-		<>@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 1280px) {
 
 			.row {
 				display: flex;
@@ -1437,7 +1437,7 @@ font-size:25px !important;
 
 		}
 
-		<>@media screen and (max-width: 980px) {
+		@media screen and (max-width: 980px) {
 
 			.row {
 				display: flex;
@@ -1682,7 +1682,7 @@ font-size:25px !important;
 
 		}
 
-		<>@media screen and (max-width: 736px) {
+		@media screen and (max-width: 736px) {
 
 			.row {
 				display: flex;
@@ -1927,7 +1927,7 @@ font-size:25px !important;
 
 		}
 
-		<>@media screen and (max-width: 480px) {
+		@media screen and (max-width: 480px) {
 
 			.row {
 				display: flex;
@@ -2740,7 +2740,7 @@ font-size:25px !important;
 				width: 100%;
 			}
 
-		<>@media screen and (max-width: 480px) {
+		@media screen and (max-width: 480px) {
 
 			ul.actions:not(.fixed) {
 				-moz-flex-direction: column;
@@ -3362,7 +3362,8 @@ font-size:25px !important;
 	.dropotron {
         background: rgba(25,62,78, 0.965);
 		border-radius: 4px;
-        box-shadow: 0 0.075em 0.35em 0 rgba(25,62,78, 0.125);
+		/*box-shadow: 0 0.075em 0.35em 0 rgba(25,62,78, 0.125);*/
+		box-shadow: 0 0.075em 0.35em 0 rgba(255, 0, 0, 0.589);
 		list-style: none;
 		margin-top: calc(-0.25em + 1px);
 		min-width: 12em;
@@ -3642,7 +3643,7 @@ font-size:25px !important;
 
 /* XLarge */
 
-	<>@media screen and (max-width: 1680px) {
+	@media screen and (max-width: 1680px) {
 
 		/* Basic */
 
@@ -3655,7 +3656,7 @@ font-size:25px !important;
 
 /* Large */
 
-	<>@media screen and (max-width: 1280px) {
+	@media screen and (max-width: 1280px) {
 
 		/* Basic */
 
@@ -3688,8 +3689,8 @@ font-size:25px !important;
 		/* Dropotron */
 
 			.dropotron.level-0 {
-				/*font-size: 1em;*/
-				font-size:35px;
+				font-size: 1em;/*
+				font-size:35px;*/
 			}
 
 		/* Banner */
@@ -3708,7 +3709,7 @@ font-size:25px !important;
 
 /* Medium */
 
-	<>@media screen and (max-width: 980px) {
+	@media screen and (max-width: 980px) {
 
 		/* Basic */
 
@@ -3807,7 +3808,7 @@ font-size:25px !important;
 		display: none;
 	}
 
-	<>@media screen and (max-width: 736px) {
+	@media screen and (max-width: 736px) {
 
 		/* Basic */
 
@@ -4115,7 +4116,7 @@ font-size:25px !important;
 
 /* XSmall */
 
-	<>@media screen and (max-width: 480px) {
+	@media screen and (max-width: 480px) {
 
 		/* Basic */
 
@@ -4124,8 +4125,8 @@ font-size:25px !important;
 			}
 
 			body, input, select, textarea {
-				/*font-size: 12pt;*/
-				font-size:35px;
+				font-size: 12pt;/*
+				font-size:35px;*/
 			}
 
 		/* Button */
