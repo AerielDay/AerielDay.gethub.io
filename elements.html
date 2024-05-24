@@ -18,18 +18,19 @@
 
 			<!-- Header -->
 				<header id="header" style="position:fixed;background-color:rgba(25,62,78, 0.95);">
+					
 					<nav id="nav" >
 						<ul>
 							<li><a href="#home"class="testingGamma">Home</a></li>
-							<li>
+							<li class="opener">
 								<a href="#one" class="testingGamma">My Projects</a>
 								<ul >
 									<!--<li><a href="left-sidebar.html">Left Sidebar</a></li>-->
-									<li >
+									<li class="opener">
 										<a class="testingBeta"href="#one">Web Design</a>
 										<ul class="testingAlpha">
 											<li><a href="#">Project 1</a></li>
-											<li style="display:none;"><a href="#">Project 2</a><div class="tooltip1B"><span class="TTtext1B">Coming Soon!</span></div></li><!--add tool tip for "coming soon"-->
+											<li style="display:none;"><a style="display:none;"href="#">Project 2</a><div class="tooltip1B"><span class="TTtext1B">Coming Soon!</span></div></li><!--add tool tip for "coming soon"-->
 											<li style="display:none;"><a href="#">Project 3</a><div class="tooltip1C"><span class="TTtext1C">Coming Soon!</span></div></li><!--add tool tip for "coming soon"-->
 											<li style="display:none;"><a href="#">Project 4</a><div class="tooltip1D"><span class="TTtext1D">Coming Soon!</span></div></li><!--add tool tip for "coming soon"-->
 										</ul>
@@ -103,26 +104,34 @@
 					
 						
 							<div class="row">
-								<div class="col-3 col-12-medium">
+								<div class="content">
 									<header>
 										<h2>Web Design</h2>
 										<p><!--html, css, scss,-->Tasks associated with creating, building, and maintainance 
 											of websites and web applications that also encompasses web design
 											 and web programming. </p>
 									</header>
-								</div>
-								<div class="col-1 col-12-medium"style="padding: 0;
-								display: flex;
+								
+								<div style="display: flex;
 								flex-wrap: wrap;
-								align-items: center">
-									<img src="/images/Screenshot webwork corrected.jpg"style="height: 145px;width: 145px;"/>
+								flex-direction: row;
+								align-content: center;
+								justify-content: space-evenly;
+								align-items: center;">
+									<div class="col-1 col-12-medium"style="padding: 0;
+									display: flex;
+									margin:0 5px;
+									align-items: center">
+										<img src="/images/Screenshot webwork corrected.jpg"style="height: 145px;width: 145px;"/>
+									</div>
+									<div class="col-1 col-12-medium"style="padding: 0;
+									display: flex;
+									margin:0 5px;
+									align-items: center">
+										<img src="/images/webDesignEx2.PNG"style="height: 145px;width: 145px;"/>
+									</div>
 								</div>
-								<div class="col-1 col-12-medium"style="padding: 0;
-								display: flex;
-								flex-wrap: wrap;
-								align-items: center">
-									<img src="/images/webDesignEx2.PNG"style="height: 145px;width: 145px;"/>
-								</div>
+								
 							</div>
 						
 						<ul class="actions" style="display:none;">
@@ -216,7 +225,7 @@
 						<header style="display: flex;flex-direction: column;flex-wrap: nowrap;align-items: center;">
 							<h2>About Me</h2>
 
-<p id="styleizedTxt">Hi, my name is Aeriel Day, and I am a self-taught developer. While pursuing a psychology degree in college, I took a beginner's web development course
+<p id="styleizedTxt">Hi, my name is Aeriel Day, <br> and I am a self-taught developer. <br>While pursuing a psychology degree in college, I took a beginner's web development course
 	 that changed my career path. Web development captivated me with its blend of problem-solving and creative expression.</p>
 
 <p id="styleizedTxt">I quickly decided to shift my focus from psychology to programming. With my brother's advice, I made computer science my minor, 
