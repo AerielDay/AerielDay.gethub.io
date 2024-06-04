@@ -4,6 +4,7 @@
 	 * Generate an indented list of links from a nav. Meant for use with panel().
 	 * @return {jQuery} jQuery object.
 	 */
+
 	$.fn.navList = function() {
 
 		var	$this = $(this);
@@ -15,6 +16,7 @@
 			var	$this = $(this),
 				indent = Math.max(0, $this.parents('li').length - 1),
 				href = $this.attr('href'),
+				
 				target = $this.attr('target');
 
 			b.push(
@@ -99,7 +101,97 @@
 					config.target = $(config.target);
 
 		// Panel.
+//personal attempt for next day: 
+/*// Method to show the menu
+$this._show = function(selector) {
+    $(selector).addClass(config.visibleClass);
+};
 
+// Method to hide the menu
+$this._hide = function(selector) {
+    $(selector).removeClass(config.visibleClass);
+};
+
+// Method to handle hover events for showing/hiding submenus
+$this._initHover = function() {
+    $('#navPanel .depth-1').hover(
+        function() {
+            $(this).find('.depth-2').stop(true, true).slideDown(200).addClass(config.visibleClass);
+        },
+        function() {
+            $(this).find('.depth-2').stop(true, true).slideUp(200).removeClass(config.visibleClass);
+        }
+    );
+
+    $('#navPanel .depth-0').hover(
+        function() {
+            $(this).find('.depth-1').stop(true, true).slideDown(200).addClass(config.visibleClass);
+        },
+        function() {
+            $(this).find('.depth-1').stop(true, true).slideUp(200).removeClass(config.visibleClass);
+        }
+    );
+};
+
+// Initialize hover functionality
+$this._initHover();
+
+
+
+(function($) {
+    var config = {
+        target: $('#navPanel'), // Adjust this selector to your target element
+        visibleClass: 'visible',
+        delay: 250, // Adjust this delay as needed
+        resetScroll: true,
+        resetForms: true
+    };
+
+    var $this = $(config.target);
+
+    // Existing _hide method
+    $this._hide = function(event) {
+        // Your existing _hide logic
+    };
+
+    // Add the following methods to your script
+
+    // Method to show the menu
+    $this._show = function(selector) {
+        $(selector).addClass(config.visibleClass);
+    };
+
+    // Method to hide the menu
+    $this._hide = function(selector) {
+        $(selector).removeClass(config.visibleClass);
+    };
+
+    // Method to handle hover events for showing/hiding submenus
+    $this._initHover = function() {
+        $('#navPanel .depth-1').hover(
+            function() {
+                $(this).find('.depth-2').stop(true, true).slideDown(200).addClass(config.visibleClass);
+            },
+            function() {
+                $(this).find('.depth-2').stop(true, true).slideUp(200).removeClass(config.visibleClass);
+            }
+        );
+
+        $('#navPanel .depth-0').hover(
+            function() {
+                $(this).find('.depth-1').stop(true, true).slideDown(200).addClass(config.visibleClass);
+            },
+            function() {
+                $(this).find('.depth-1').stop(true, true).slideUp(200).removeClass(config.visibleClass);
+            }
+        );
+    };
+
+    // Initialize hover functionality
+    $this._initHover();
+
+})(jQuery);
+*/
 			// Methods.
 				$this._hide = function(event) {
 

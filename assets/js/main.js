@@ -53,6 +53,7 @@
     $(
         '<div id="navPanel">' +
         '<nav>' +
+        
         $('#nav').navList() +
         '</nav>' +
         '</div>'
@@ -67,7 +68,7 @@
             target: $body,
             visibleClass: 'navPanel-visible'
         });
-
+        $().appendTo($body);
     // Parallax.
     // Disabled on IE (choppy scrolling) and mobile platforms (poor performance).
     if (browser.name === 'ie' || browser.mobile) {

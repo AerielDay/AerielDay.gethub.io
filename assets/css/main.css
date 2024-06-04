@@ -3362,8 +3362,8 @@ font-size:25px !important;
 	.dropotron {
         background: rgba(25,62,78, 0.965);
 		border-radius: 4px;
-		/*box-shadow: 0 0.075em 0.35em 0 rgba(25,62,78, 0.125);*/
-		box-shadow: 0 0.075em 0.35em 0 rgba(255, 0, 0, 0.589);
+		box-shadow: 0 0.075em 0.35em 0 rgba(25,62,78, 0.125);
+		/*box-shadow: 0 0.075em 0.35em 0 rgba(255, 0, 0, 0.589);*/
 		list-style: none;
 		margin-top: calc(-0.25em + 1px);
 		min-width: 12em;
