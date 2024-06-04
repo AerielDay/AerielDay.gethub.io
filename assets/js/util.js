@@ -19,6 +19,7 @@
 				
 				target = $this.attr('target');
 
+				if(indent==0){
 			b.push(
 				'<a ' +
 					'class="link depth-' + indent + '"' +
@@ -29,12 +30,94 @@
 					$this.text() +
 				'</a>'
 			);
-
+		}
+		else if(indent==1){
+				b.push(
+					'<a '+ 'class="link depth-' + indent + ' testingPlace1"'+ 
+					( (typeof target !== 'undefined' && target != '') ? ' target="' + target + '"' : '') +
+					( (typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
+				'>' +
+					'<span class="indent-' + indent + '"></span>' +
+					$this.text() +
+				'</a>'
+				)
+				$(document).ready(function(){
+			$('.testingPlace1').hover(
+				function(){
+					$(this).children('ul').stop(true,true).slideDown(200);
+				},
+				function(){
+					$(this).children('ul').stop(true, true).slideUp(200);
+				}
+			);
+			});
+		}
+		else {
+			b.push(
+				'<a '+ 'class="link depth-' + indent + ' testingPlace2"'+ 
+				( (typeof target !== 'undefined' && target != '') ? ' target="' + target + '"' : '') +
+				( (typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
+			'>' +
+				'<span class="indent-' + indent + '"></span>' +
+				$this.text() +
+			'</a>'
+			)
+		}
 		});
 
 		return b.join('');
 
 	};
+
+/*
+$.fn.navList = function() {
+    var $this = $(this);
+    var $a = $this.find('a');
+    var b = [];
+
+    $a.each(function() {
+        var $this = $(this);
+        var indent = Math.max(0, $this.parents('li').length - 1);
+        var href = $this.attr('href');
+        var target = $this.attr('target');
+
+        var classes = 'link depth-' + indent;
+        if (indent === 1) {
+            classes += ' testingPlace1';
+        } else if (indent > 1) {
+            classes += ' testingPlace2';
+        }
+
+        var linkHtml = '<a class="' + classes + '"';
+        if (typeof target !== 'undefined' && target !== '') {
+            linkHtml += ' target="' + target + '"';
+        }
+        if (typeof href !== 'undefined' && href !== '') {
+            linkHtml += ' href="' + href + '"';
+        }
+        linkHtml += '><span class="indent-' + indent + '"></span>' + $this.text() + '</a>';
+
+        b.push(linkHtml);
+    });
+
+    // Join the generated links and append to $this or another container
+    var navHtml = b.join('');
+    $this.html(navHtml); // Use html() method to set HTML content
+
+    // Event delegation for hover effect on testingPlace1 and testingPlace2
+    $this.on('mouseenter', '.testingPlace1, .testingPlace2', function() {
+        $(this).children('ul').stop(true, true).slideDown(200);
+    }).on('mouseleave', '.testingPlace1, .testingPlace2', function() {
+        $(this).children('ul').stop(true, true).slideUp(200);
+    });
+
+    return $this; // Maintain chainability
+};
+
+// Call the function on your navigation container
+$('#theNav').navList();
+
+*/
 
 	/**
 	 * Panel-ify an element.
