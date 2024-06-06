@@ -5,64 +5,55 @@
 	 * @return {jQuery} jQuery object.
 	 */
 
-	$.fn.navList = function() {
+	$.fn.navList = function () {
 
-		var	$this = $(this);
-			$a = $this.find('a'),
+		var $this = $(this);
+		$a = $this.find('a'),
 			b = [];
 
-		$a.each(function() {
+		$a.each(function () {
 
-			var	$this = $(this),
+			var $this = $(this),
 				indent = Math.max(0, $this.parents('li').length - 1),
 				href = $this.attr('href'),
-				
+
 				target = $this.attr('target');
 
-				if(indent==0){
-			b.push(
-				'<a ' +
-					'class="link depth-' + indent + '"' +
-					( (typeof target !== 'undefined' && target != '') ? ' target="' + target + '"' : '') +
-					( (typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
-				'>' +
-					'<span class="indent-' + indent + '"></span>' +
-					$this.text() +
-				'</a>'
-			);
-		}
-		else if(indent==1){
+			if (indent == 0) {
 				b.push(
-					'<a '+ 'class="link depth-' + indent + ' testingPlace1"'+ 
-					( (typeof target !== 'undefined' && target != '') ? ' target="' + target + '"' : '') +
-					( (typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
-				'>' +
+					'<a ' +
+					'class="link depth-' + indent + '"' +
+					((typeof target !== 'undefined' && target != '') ? ' target="' + target + '"' : '') +
+					((typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
+					'>' +
 					'<span class="indent-' + indent + '"></span>' +
 					$this.text() +
-				'</a>'
+					'</a>'
+				);
+			}
+			else if (indent == 1) {
+				b.push(
+					'<a ' + 'class="link depth-' + indent + ' testingPlace1"' +
+					((typeof target !== 'undefined' && target != '') ? ' target="' + target + '"' : '') +
+					((typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
+					'>' +
+					'<span class="indent-' + indent + '"></span>' +
+					$this.text() +
+					'</a>'
 				)
-				$(document).ready(function(){
-			$('.testingPlace1').hover(
-				function(){
-					$(this).children('ul').stop(true,true).slideDown(200);
-				},
-				function(){
-					$(this).children('ul').stop(true, true).slideUp(200);
-				}
-			);
-			});
-		}
-		else {
-			b.push(
-				'<a '+ 'class="link depth-' + indent + ' testingPlace2"'+ 
-				( (typeof target !== 'undefined' && target != '') ? ' target="' + target + '"' : '') +
-				( (typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
-			'>' +
-				'<span class="indent-' + indent + '"></span>' +
-				$this.text() +
-			'</a>'
-			)
-		}
+				
+			}
+			else {
+				b.push(
+					'<a ' + 'class="link depth-' + indent + ' testingPlace2"' +
+					((typeof target !== 'undefined' && target != '') ? ' target="' + target + '"' : '') +
+					((typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
+					'>' +
+					'<span class="indent-' + indent + '"></span>' +
+					$this.text() +
+					'</a>'
+				)
+			}
 		});
 
 		return b.join('');
