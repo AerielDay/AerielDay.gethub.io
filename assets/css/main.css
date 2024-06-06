@@ -3396,6 +3396,9 @@ font-size:25px !important;
 			font-size:35px;
 			margin-top: 1em;
 		}
+		.dropotron.level-1{
+			margin-right:0px;
+		}
 
 			.dropotron.level-0:before {
 				-moz-transform: rotate(45deg);
@@ -3457,6 +3460,7 @@ font-size:25px !important;
 				#header nav ul li {
 					display: inline-block;
 					margin-left: 1em;
+					
 				}
 
 					#header nav ul li a, #header nav ul li span {
@@ -3469,12 +3473,14 @@ font-size:25px !important;
 						font-weight:500;
 						line-height: inherit;
 						outline: 0;
+						
 					}
 
 						#header nav ul li a.button, #header nav ul li span.button {
 							height: 2em;
 							line-height: 2em;
 							padding: 0 1.25em;
+							
 						}
 
 						#header nav ul li a:not(.button):before, #header nav ul li span:not(.button):before {
@@ -4042,26 +4048,21 @@ font-size:25px !important;
 					border: 0;
 					border-top: solid 1px rgba(215,233,242, 0.05);
                     color: rgba(215,233,242, 0.75);
-					
 					height: 3em;
 					line-height: 3em;
 					text-decoration: none;
 				}
-/*
-				.testingPlace1{
-	border:2px solid hotpink !important;
-	display:none;
+
+.testingPlace1{
+	display:block;
 }
 .testingPlace2{
-	border:2px solid cyan !important;
 	display:none;
 }
-*/
-.testingPlace1, .testingPlace2{
-display:none;
-}
+
 					#navPanel .link:hover  {
 						color: inherit !important;
+						background-color:#1b7483;
 					}
 
 					#navPanel .link:first-child {
